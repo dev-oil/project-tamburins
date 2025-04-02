@@ -2,7 +2,14 @@ export interface Product {
   id: string;
   name: string;
   price: number;
-  image: string;
   category: string;
-  description?: string;
+  sub_category: string;
+  series: string;
+  volume: string;
+  scent_notes: string;
+  desc: string;
+  images: {
+    thumbnail: string;
+    catalog: string[];
+  };
 }
