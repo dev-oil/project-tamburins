@@ -5,9 +5,12 @@ export interface Product {
   category: string;
   sub_category: string;
   series: string;
-  volume: string;
   scent_notes: string;
   desc: string;
+  attributes: {
+    volume?: string;
+    color?: string;
+  };
   images: {
     thumbnail: string;
     catalog: string[];
